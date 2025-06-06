@@ -49,14 +49,14 @@ end
 
 local LeftGroupBox = Tabs.Main:AddLeftGroupbox("Auto Roll")
 
-local Dropdown = Groupbox:AddDropdown("Select Amount", {
-    Values = {"Single", "Double",},
+local Dropdown = Groupbox:AddDropdown("MyDropdown", {
+    Values = {"Single", "Double"},
     Default = 1, -- Index of the default option
     Multi = false, -- Whether to allow multiple selections
     Text = "Select Amount",
-    Tooltip = nil,
+    Tooltip = "This is a dropdown",
     Callback = function(Value)
-        _G.RollAmount = Value
+        print("Dropdown new value:", Value)
     end
 })
 
