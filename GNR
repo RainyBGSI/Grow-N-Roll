@@ -48,6 +48,8 @@ local isBuyingMerchant = false
 
 local Tab = Window:CreateTab("Main", "home") -- Title, Image
 
+local Section = Tab:CreateSection("Section Example")
+
 local Toggle = Tab:CreateToggle({
    Name = "Auto Roll",
    CurrentValue = false,
